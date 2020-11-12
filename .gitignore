@@ -1,0 +1,16 @@
+**/UserInterfaceState.xcuserstate
+**/UserInterfaceState.xcuserstate~Stashed changes
+**/xcuserdata/*
+**/.DS_Store
+**/db.json
+*.xcbkptlist
+
+Demo Tab Bar.app.dSYM.zip
+Demo Tab Bar.ipa
+PTypeV2/fastlane/test_output/report.html
+PTypeV2/fastlane/test_output/report.junit
+NewRelicFeatureFlags.h
+PTypeV2/Pods/NewRelicAgent/NewRelicAgent/NewRelicAgent.framework/Resources
+PTypeV2/Pods/NewRelicAgent/NewRelicAgent/NewRelicAgent.framework/Versions/Current
+Headers
+NewRelicAgent
