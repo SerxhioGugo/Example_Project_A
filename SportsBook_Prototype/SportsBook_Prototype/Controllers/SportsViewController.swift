@@ -73,11 +73,13 @@ extension SportsViewController: SportsDelegate {
     
     //Update UI by feeding the data
     func updateUI() {
-        var snapshot = NSDiffableDataSourceSnapshot<Section,  WHSportsbook.Event>()
-        for (idx, date) in vm.allDates.enumerated() {
-            snapshot.appendSections([.eventDate(string: date.shortDateString)])
-            snapshot.appendItems(vm.eventsArray(idx))
-            dataSource?.apply(snapshot, animatingDifferences: true)
+        DispatchQueue.main.async {
+            var snapshot = NSDiffableDataSourceSnapshot<Section,  WHSportsbook.Event>()
+            for (idx, date) in self.vm.allDates.enumerated() {
+                snapshot.appendSections([.eventDate(string: date.shortDateString)])
+                snapshot.appendItems(self.vm.eventsArray(idx))
+                self.dataSource?.apply(snapshot, animatingDifferences: true)
+            }
         }
     }
 }
