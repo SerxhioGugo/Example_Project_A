@@ -12,14 +12,12 @@
 		614ACA11252F877200DB8733 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614ACA10252F877200DB8733 /* ViewController.swift */; };
 		614ACA16252F877200DB8733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614ACA15252F877200DB8733 /* Assets.xcassets */; };
 		614ACA19252F877200DB8733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614ACA17252F877200DB8733 /* LaunchScreen.storyboard */; };
-		614ACA25252F893E00DB8733 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 614ACA24252F893E00DB8733 /* SnapKit */; };
 		614ACA31252F898D00DB8733 /* SportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614ACA2B252F898D00DB8733 /* SportsViewController.swift */; };
 		614ACA32252F898D00DB8733 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614ACA2C252F898D00DB8733 /* APIManager.swift */; };
 		614ACA33252F898D00DB8733 /* SingleSportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614ACA2D252F898D00DB8733 /* SingleSportController.swift */; };
 		614ACA34252F898D00DB8733 /* SelectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614ACA2E252F898D00DB8733 /* SelectionsCell.swift */; };
 		614ACA35252F898D00DB8733 /* EventDataV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614ACA2F252F898D00DB8733 /* EventDataV2.swift */; };
 		614ACA36252F898D00DB8733 /* SportsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614ACA30252F898D00DB8733 /* SportsModel.swift */; };
-		61CE1B1925546BD1004B577B /* WHSportsbook in Frameworks */ = {isa = PBXBuildFile; productRef = 61CE1B1825546BD1004B577B /* WHSportsbook */; };
 		61CE1B1F255475D6004B577B /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CE1B1E255475D6004B577B /* Array.swift */; };
 		61D54EA42559D448003FA572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D54EA32559D448003FA572 /* Main.storyboard */; };
 		61D54EA82559D6E0003FA572 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D54EA72559D6E0003FA572 /* Date.swift */; };
@@ -29,6 +27,8 @@
 		61E53583253F34B900B69463 /* Sequence+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E53581253F34B900B69463 /* Sequence+Extensions.swift */; };
 		61E53586253F350F00B69463 /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E53585253F350F00B69463 /* Float.swift */; };
 		896595262555C2BB0032333B /* FuturesSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896595252555C2BB0032333B /* FuturesSectionHeaderView.swift */; };
+		89F35D96255EE4C100BEFE6B /* WHSportsbook in Frameworks */ = {isa = PBXBuildFile; productRef = 89F35D95255EE4C100BEFE6B /* WHSportsbook */; };
+		89F35D9A255EE4DD00BEFE6B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 89F35D99255EE4DD00BEFE6B /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,9 +60,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				614ACA25252F893E00DB8733 /* SnapKit in Frameworks */,
+				89F35D9A255EE4DD00BEFE6B /* SnapKit in Frameworks */,
 				61D54EBC2559D94A003FA572 /* WHNetwork in Frameworks */,
-				61CE1B1925546BD1004B577B /* WHSportsbook in Frameworks */,
+				89F35D96255EE4C100BEFE6B /* WHSportsbook in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,9 +177,9 @@
 			);
 			name = SportsBook_Prototype;
 			packageProductDependencies = (
-				614ACA24252F893E00DB8733 /* SnapKit */,
-				61CE1B1825546BD1004B577B /* WHSportsbook */,
 				61D54EBB2559D94A003FA572 /* WHNetwork */,
+				89F35D95255EE4C100BEFE6B /* WHSportsbook */,
+				89F35D99255EE4DD00BEFE6B /* SnapKit */,
 			);
 			productName = SportsBook_Prototype;
 			productReference = 614ACA09252F877100DB8733 /* SportsBook_Prototype.app */;
@@ -209,9 +209,9 @@
 			);
 			mainGroup = 614ACA00252F877100DB8733;
 			packageReferences = (
-				614ACA23252F893E00DB8733 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				61CE1B1725546BD1004B577B /* XCRemoteSwiftPackageReference "WHSportsbook" */,
 				61D54EBA2559D94A003FA572 /* XCRemoteSwiftPackageReference "WHNetwork" */,
+				89F35D94255EE4C100BEFE6B /* XCRemoteSwiftPackageReference "WHSportsbook" */,
+				89F35D98255EE4DD00BEFE6B /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 614ACA0A252F877100DB8733 /* Products */;
 			projectDirPath = "";
@@ -451,22 +451,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		614ACA23252F893E00DB8733 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.1;
-			};
-		};
-		61CE1B1725546BD1004B577B /* XCRemoteSwiftPackageReference "WHSportsbook" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@git.nonprod.williamhill.plc:sportsbook/us-platform-mobile/WHSportsbook.git";
-			requirement = {
-				branch = "test-throwaway";
-				kind = branch;
-			};
-		};
 		61D54EBA2559D94A003FA572 /* XCRemoteSwiftPackageReference "WHNetwork" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://git.nonprod.williamhill.plc/sportsbook/us-platform-mobile/WHNetwork";
@@ -475,23 +459,39 @@
 				kind = branch;
 			};
 		};
+		89F35D94255EE4C100BEFE6B /* XCRemoteSwiftPackageReference "WHSportsbook" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://git.nonprod.williamhill.plc/sportsbook/us-platform-mobile/WHSportsbook.git";
+			requirement = {
+				branch = "test-throwaway";
+				kind = branch;
+			};
+		};
+		89F35D98255EE4DD00BEFE6B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		614ACA24252F893E00DB8733 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 614ACA23252F893E00DB8733 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		61CE1B1825546BD1004B577B /* WHSportsbook */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 61CE1B1725546BD1004B577B /* XCRemoteSwiftPackageReference "WHSportsbook" */;
-			productName = WHSportsbook;
-		};
 		61D54EBB2559D94A003FA572 /* WHNetwork */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 61D54EBA2559D94A003FA572 /* XCRemoteSwiftPackageReference "WHNetwork" */;
 			productName = WHNetwork;
+		};
+		89F35D95255EE4C100BEFE6B /* WHSportsbook */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89F35D94255EE4C100BEFE6B /* XCRemoteSwiftPackageReference "WHSportsbook" */;
+			productName = WHSportsbook;
+		};
+		89F35D99255EE4DD00BEFE6B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89F35D98255EE4DD00BEFE6B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

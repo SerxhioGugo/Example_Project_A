@@ -24,7 +24,13 @@ class SportsViewModel {
             loadSchedule()
         }
     }
-        
+    
+    var expandedSection = -9 {
+        didSet {
+            if oldValue == expandedSection { expandedSection = -1 }
+        }
+    }
+    
     var allDates = [Date]()
     private var allEvents = WHSportsbook.Events()
     
@@ -34,7 +40,7 @@ class SportsViewModel {
         let sortedEvents = groupedEvents.compactMap({$0.value})[section].sorted { (ev1, ev2) -> Bool in
             return ev1.startTime < ev2.startTime
         }
-        return sortedEvents
+        return section == expandedSection ? sortedEvents : []
     }
  
 }

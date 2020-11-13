@@ -40,8 +40,16 @@ class SportsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: FuturesSectionHeaderView.reuseIdentifier) as? FuturesSectionHeaderView else { return UIView() }
         header.setupHeaderLabel(vm.allDates[section].shortDateString)
+        header.tag = section
+        let tappedHeader = UITapGestureRecognizer(target: self, action: Selector("tappedHeader:"))
+        header.addGestureRecognizer(tappedHeader)
         print("\n\n\t section: \(section)\n\n")
         return header
+    }
+    
+    @objc func tappedHeader(_ sender: UIGestureRecognizer) {
+        vm.expandedSection = sender.view?.tag ?? -9
+        updateUI()
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

@@ -12,7 +12,7 @@ class SingleSportController: UITableViewController {
     
     let ac: UIActivityIndicatorView = {
         let ac = UIActivityIndicatorView(style: .large)
-//        ac.backgroundColor = .darkGray
+        ac.backgroundColor = .darkGray
         ac.startAnimating()
         return ac
     }()

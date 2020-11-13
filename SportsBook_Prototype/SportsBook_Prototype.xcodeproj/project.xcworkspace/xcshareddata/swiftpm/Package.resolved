@@ -21,7 +21,7 @@
       },
       {
         "package": "WHSportsbook",
-        "repositoryURL": "git@git.nonprod.williamhill.plc:sportsbook/us-platform-mobile/WHSportsbook.git",
+        "repositoryURL": "https://git.nonprod.williamhill.plc/sportsbook/us-platform-mobile/WHSportsbook.git",
         "state": {
           "branch": "test-throwaway",
           "revision": "3cb5ebf8b6b78ee5763fdbdc914ccb3e5f8350d1",
